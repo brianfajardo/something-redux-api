@@ -5,7 +5,8 @@ const INITIAL_STATE = []
 export default (state = INITIAL_STATE, action) => {
   switch (action.type) {
     case FETCH_USERS:
-      return [...state, ...action.payload]
+    console.log(action.payload)
+      return [...state, ...action.payload.data]
     default:
       return state
   }
