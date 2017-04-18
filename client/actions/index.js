@@ -7,5 +7,5 @@ export const fetchUsers = () => ({
     { name: 'Brian' },
     { name: 'Tommy' },
     { name: 'Ali' }
-  ]
+  ],
 })

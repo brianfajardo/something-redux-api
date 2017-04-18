@@ -1,9 +1,11 @@
 import React, { Component } from 'react'
 
+import UserList from '../containers/UserList'
+
 export default class App extends Component {
   render() {
     return (
-      <h1>Brian's React/Redux boilerplate⚡</h1>
+      <UserList />
     )
   }
 }

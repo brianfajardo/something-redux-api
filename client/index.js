@@ -6,10 +6,10 @@ import { createStore, applyMiddleware } from 'redux'
 import App from './components/App'
 import reducers from './reducers'
 
-const createStoreWidthMiddleware = applyMiddleware()(createStore)
+const createStoreWithMiddleware = applyMiddleware()(createStore)
 
 ReactDOM.render(
-  <Provider store={createStoreWidthMiddleware(reducers)}>
+  <Provider store={createStoreWithMiddleware(reducers)}>
     <App />
   </Provider>
   , document.getElementById('root')
