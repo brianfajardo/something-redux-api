@@ -13,13 +13,20 @@ class UserList extends Component {
   renderUser(user) {
     return (
       <div
-        className="card"
+        className="card text-center"
         style={styles.card}
+        key={user.id}
       >
         <div className="card-block">
           <h4 className="card-title">{user.name}</h4>
-          <p className="card-text">Twitch.tv</p>
-          <a className="btn btn-outline-info btn-sm">Email</a>
+          <p className="card-text">{user.address.city}</p>
+          <p className="card-text">{user.phone}</p>
+          <a
+            className="btn btn-danger btn-sm"
+            href={user.email}
+          >
+            {user.email}
+          </a>
         </div>
       </div>
     )
