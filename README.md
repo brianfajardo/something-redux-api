@@ -1,13 +1,8 @@
-# react-redux-boilerplate
+# App Building Process
 
-My own React/Redux boilerplate for quick project setups.
-Included libraries:
-* react & redux
-* nodemon & express
-* react-router-dom
-* prop-types
-* webpack-hot-middleware
-* react-hot-loader
+1. build app with dummy data
+2. replace dummy data with ajax
+3. write middleware to help fetch data
 
 How to use:
 * clone or download repository
