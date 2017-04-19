@@ -5,10 +5,6 @@ import Async from '../middlewares/async'
 
 const createStoreWithMiddleware = applyMiddleware(Async)(createStore)
 
-const configureStore = initialState => {
-  const store = createStoreWithMiddleware(rootReducer, initialState)
-
-  return store
+export default (initialState) => {
+  return createStoreWithMiddleware(rootReducer, initialState)
 }
-
-export default configureStore
